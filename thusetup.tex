@@ -1,0 +1,91 @@
+% !TeX root = ./proposal.tex
+
+% 论文基本信息配置
+
+\thusetup{
+  output = electronic,
+  thesis-type = proposal,
+  title  = {现代宇宙学观测探索原初高能物理}, % {叩宇穷宙：现代宇宙学观测\\探索原初高能物理},
+  title* = {Detect Primordial Physics with Late-time Cosmology Observations},
+  degree-category  = {理学博士},
+  degree-category* = {Doctor of Philosophy},
+  department = {天文系},
+  discipline  = {天文学},
+  discipline* = {Astronomy},
+  author  = {赵思逸},
+  author* = {Zhao Siyi},
+  %
+  % 学号
+  % 仅当书写开题报告时需要（同时设置 `thesis-type = proposal'）
+  %
+  student-id = {2021312349},
+  %
+  % 指导教师
+  %   中文姓名和职称之间以英文逗号“,”分开，下同
+  %
+  supervisor  = {赵成, 教授},
+  supervisor* = {Professor Zhao Cheng},
+  %
+  % 是否在中文封面后的空白页生成书脊（默认 false）
+  %
+  include-spine = false,
+}
+
+% 载入所需的宏包
+
+% 定理类环境宏包
+\usepackage{amsthm}
+
+\thusetup{
+  %
+  % 数学字体
+  % math-style = GB,  % GB | ISO | TeX
+  math-font  = xits,  % stix | xits | libertinus
+}
+
+% 表格加脚注
+\usepackage{threeparttable}
+
+% 表格中支持跨行
+\usepackage{multirow}
+
+% 固定宽度的表格。
+% \usepackage{tabularx}
+
+% 跨页表格
+\usepackage{longtable}
+
+% 算法
+\usepackage{algorithm}
+\usepackage{algorithmic}
+
+% 量和单位
+\usepackage{siunitx}
+% 自定义command
+\newcommand{\PG}{^{\rm G}} % primordial Gaussian case
+\newcommand{\LPNG}{^{\rm local}} % primordial non-Gaussian case
+\newcommand{\ks}{k_{\rm s}} % short wavelength
+\newcommand{\kl}{k_{\rm l}} % long wavelength
+
+% 参考文献使用 BibTeX + natbib 宏包
+% 顺序编码制
+\usepackage[sort]{natbib}
+\bibliographystyle{thuthesis-numeric}
+
+% 定义所有的图片文件在 figures 子目录下
+\graphicspath{{figures/}}
+
+% 数学命令
+\makeatletter
+\newcommand\dif{%  % 微分符号
+  \mathop{}\!%
+  \ifthu@math@style@TeX
+    d%
+  \else
+    \mathrm{d}%
+  \fi
+}
+\makeatother
+
+% hyperref 宏包在最后调用
+\usepackage{hyperref}
