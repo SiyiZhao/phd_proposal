@@ -57,15 +57,15 @@
 描述非高斯性的最低阶的统计学量是三点统计，如双谱(bispectrum)和三点相关函数(three-point correlation function, 3PCF)，由于计算难度随统计的阶数增长迅速，现在的研究多聚焦于两点和三点统计。
 
 % 可能存在多种场 暴胀子(inflaton)，曲率子(curvaton)
-从暴胀的物理来看，我们目前仅知应存在一种驱动暴胀的场，称为“暴胀子”(inflaton, 记为$\phi$)，对于暴胀子的性质以及是否存在其它的场则知之甚少。
+从暴胀的物理来看，我们目前仅知应存在一种驱动暴胀的场，称为“暴胀子”(inflaton)，对于暴胀子的性质以及是否存在其它的场则知之甚少。
 % 比如生成原初涨落的机制可能是暴胀子本身的量子涨落，也可能是其它场或暴胀子自身额外的自由度，总之可以唯象地将这个自由度称为“曲率子”(curvaton, 记为$\sigma$)。
 % 早期的研究从暴胀子的势能、动能、及多场暴胀的角度
 % inflaton的自相互作用可以看作有额外的粒子传递
 % 高能理论告诉我们暴胀期间大概率存在额外的场（很多文献这么写）
 根据暴胀期间可能存在的额外的粒子$\sigma$的质量可以分为三种情况：
-其一是$m_\sigma \gg H$, 即$\sigma$的质量远大于暴胀期间的哈勃参数$H$，因此它一旦产生就会迅速衰变，这种情况等效于单场暴胀；
-其二是$m_\sigma \ll H$, 这种情况下$\sigma$接近于零质量粒子，可以在衰变前传播一段时间，就是通常的多场暴胀；
-最后一种情况介于二者之间，$m_\sigma \sim H$，被称为 quasi-single field，是宇宙学对撞机(Cosmological Collider)的主要研究内容\cite{arkani-hamed2015coco}。
+其一是$\sigma$的质量远大于暴胀期间的哈勃参数($m_\sigma \gg H$)，因此它一旦产生就会迅速衰变，这种情况等效于单场暴胀；
+其二情况下$\sigma$接近于零质量粒子($m_\sigma \ll H$)，可以在衰变前传播一段时间，就是通常的多场暴胀；
+最后一种情况介于二者之间，$m_\sigma \sim H$，被称为 quasi-single field，是宇宙对撞机(Cosmological Collider)的主要研究内容\cite{arkani-hamed2015coco}。
 % 它们预言的双谱各不相同。%对三角形形状的依赖性
 它们预言的原初双谱是区分这三种情况，甚至进一步限制$\sigma$的质量、自旋等性质的主要途径。
 
@@ -83,7 +83,7 @@
 暴胀模型对形状函数的预言通常很复杂，为了进行观测限制，通常需要构建近似的简化的样板(template)，%常见的样板有三种：局域型(local, LPNG)，等边型(equilateral, EPNG)和正交型(orthogonal)。
 其中局域型(local, LPNG)% $S_{\rm local}\left(k_1, k_2, k_3\right)\sim f_{\rm NL}^{\rm loc} \qty(\frac{k_3^2}{k_1 k_2}+2 {\rm ~cyc. })$ 
 是区分单场和多场暴胀模型的关键，且在星系功率谱上的信号最强，得到了最多研究。
-目前CMB对LPNG的测量最为精确，普朗克卫星2018年的数据给出LPNG的幅度为$f_{\rm NL}^{\rm loc}=-0.9\pm 5.1$\cite{planck2020png}，LSS的测量也紧随其后，最新的DESI第一年数据给出$1~\sigma$的误差约为$10$左右\cite{chaussidon2024desipng}，可以预期在未来五到十年，LSS的测量精度会接近并最终超过CMB\cite{achucarro2022inflation,zhao2024must}。
+目前CMB对LPNG的测量最为精确，普朗克卫星2018年的数据给出LPNG的幅度为$f_{\rm NL}^{\rm loc}=-0.9\pm 5.1$\cite{planck2020png}，LSS的测量也紧随其后，最新的DESI第一年(Y1)数据给出$1~\sigma$的误差约为$10$左右\cite{chaussidon2024desipng}，可以预期在未来五到十年，LSS的测量精度会接近并最终超过CMB\cite{achucarro2022inflation,zhao2024must}。
 % 接近正三角形的构型(Equilateral PNG)$f_{\rm NL}^{\rm equil}=-26\pm 47$\cite{planck2020png}告诉我们暴胀子的耦合强度不大；
 % constraint on equil PNG tells us "Inflatons are weakly coupled".
 % 而(Orthogonal PNG) $f_{\rm NL}^{\rm orth}=-38\pm 24$\cite{planck2020png}则。
@@ -103,3 +103,13 @@
 \chapter{研究内容}
 % 、工作特色及难点、预期成果及可能的创新点
 % 课题研究内容，研究方案，工作特色及难点，预期成果和可能的创新点以及论文工作的总体安排等
+基于PNG理论和LSS观测快速发展的背景，我们计划开发一系列有助于通过LSS测量PNG的宇宙学观测方法。
+
+对于基础的LPNG，我们将在目前的研究基础上进一步探索多探针联合测量方法、高阶统计和非标准统计。这些方法将在模拟数据上得到充分验证后，再被用于在实际的观测数据中进行LPNG的测量。
+目前DESI的测量\cite{chaussidon2024desipng}只使用了亮红星系(Luminous Red Galaxy, LRG)和类星体(Quasar, QSO)两种探针的功率谱，这两类探针的红移重合度很小，所以目前对多探针的应用仅限于在最后一步的贝叶斯分析中，将两个样本给出的后验分布(posterior)合并，而不考虑不同探针之间的互相关统计。与LRG红移重合较高的发射线星系(Emission Line Galaxy, ELG)因为系统误差较为严重，将其纳入分析是否有助于结果的提升仍在研究之中。
+高阶的三点统计也因统计误差尚在研究中，而没有被纳入PNG的测量中。
+虽然在这两方面相对谨慎，DESI Y1的数据分析中却引入了一种新的样本加权方法，像这样的新的数据分析方法，以及非标准统计，都需要在模拟数据上进行充分的验证。
+此外，随着样本量的积累，也可以人为地划分子样本来进行“多探针”的数据分析。初步的研究表明，两组样本的bias差别越大，PNG的测量精度越高\cite{barreira2023mtpng}。目前此类研究多利用模拟数据的暗物质晕样本(halo)进行分析，我们将在DESI合作组中基于第三年(Y3)的数据通过晕占据数模型(Halo Occupation Distribution, HOD)等方法，得到模拟的星系样本，进行多探针分析。
+最后值得一提的是，从DESI2开始，高红移的莱曼截断星系(Lyman Break Galaxy, LBG)逐渐进入光谱巡天的视野，到以MUST为代表的下一代巡天项目中，LBG将成为主要的探针之一。这将为LSS巡天带来全新的窗口，特别有利于PNG的测量。同样作为新窗口到来的还有以SKA为代表中性氢巡天项目，我们也将重点关注中性氢与星系的多探针联合观测。
+
+在传统的LPNG之外，我们注意到一种新的，更具物理含义的PNG template，这种template由宇宙对撞机
